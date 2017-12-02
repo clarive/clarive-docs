@@ -42,7 +42,3 @@ Indica si el campo tiene que ser completado obligatoriamente.
 ### Rama
 
 Permite asociar ramas del repositorio con tópicos donde la categoría sea de tipo Cambio.
-
-### Altura
-
-Establecer una altura para el cuadro donde adjuntar las ramas.

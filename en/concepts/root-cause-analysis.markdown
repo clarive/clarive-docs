@@ -11,4 +11,4 @@ In order to use it, several things have to be configured:
 
 1. Root-Cause [Resource](/concepts/resource) with description and matching patterns.
 2. All [rule](/concepts/rule) operations that can be analysed must be configured with the previously created Resources.
-3. Root-Cause Analysis [Daemon](/admin/daemon) has to be running in order to process the jobs.
+3. Root-Cause Analysis [Daemon](/ee/admin/daemon) has to be running in order to process the jobs.

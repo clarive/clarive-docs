@@ -1,107 +1,176 @@
 ---
-title: Topic Kanban Board
+title: Using Kanban Boards in Clarive
 index: 5000
 icon: board
 ---
 
-Clarive has a Kanban board generator utility that is available from two places:
+Clarive provides you an interactive Kanban mode to view the topics in a board mode so that it is easier to handle
+several topics at once.
 
-- The Topic grid
-- From within a Topic that holds other Topics.
+In addition, we offer you the possibility to change the status of a specific topic just dragging and dropping it to the
+desired status, also you can **deploy a topic without leaving board**.
 
-The Kanban board can be opened by clicking on the following icon: ![](/static/images/icons/board.svg)
+There are three ways to view topics in a Kanban board. The first is to create a Board from zero through the `Create`
+button located in the top menu.
 
-### How does it work?
+Another way to view a kanban board is from a grid of topics. We will see the `Kanban` button
+![](/static/images/icons/kanban.svg "Kanban")  that shows the topics listed in the grid. This board respects the filters
+that have been added in the grid of topics.
 
-Clarive Kanban boards are always initialized either from within a list of Topics (from the grid) or from the Topics
-contained within a Topic.
+Finally you can open a Kanban Board from a Release topic. These releases can contain topics, so in the Board you will
+see only the topics included in the Release.
 
-From that list, the Kanban will show as tables all from and to Statuses available as immediate Topic Transitions
-(transitions that can be performed for the Topics shown). Likewise, the Environments corresponding to those Statuses are
-displayed directly below them.
+## Kanban types
 
-It will hide Statuses that the User cannot transition to or from, or that are not available as a Transition.
+- **Static** - With static Kanbans, you'll have full control of the cards/topics you want to show on the board, it's
+  useful if you need to complete a set of topic tasks and no other topics allowed to appear on the board at the same
+time, use this type if you want to work on specific topics and your workflow ends when these topics are done.
 
-To change the [Status](/concepts/status) of a Topic, just drag and drop the Topic to another Status, except for
-promotable Environments (see below). When an element being dragged may be dropped, this is shown by a box with broken
-lines as the element passes over the column belonging to the status concerned. When a Topic is dropped into another
-Status column, that becomes the new Status of the Topic.
+- **Dynamic** - With dynamic Kanban, you can't add topics manually, however, you can set filters for that board from the
+  configurations, any topic matches the filters will appear on the board automatically, it's more like a continuous
+visualization of the work-flow across a project or multiple projects.
 
-## Toolbar
 
-**Selection mode**
+## Create a new Kanban Board
 
-This may be done in two ways; either by searching via the search field, where listed topics matching the entered pattern
-will be highlighted in yellow, or else by clicking on activate manual selection, where we will click on the topics we
-wish to select.
+To create a new Kanban Board, click on `Create` button at the top of the page and select Kanban. From the new window,
+write a name and select the type of the board, static or dynamic.
 
-Once selected, we will be able to perform different actions on them:
+Once the name and type have been confirmed, an empty board will be opened.
 
-- Delete selected topics.
-- Delete unselected topics.
-- Select all.
-- Unselect all.
+Don't worry, it's time to start setting up the board to visualize the topics you want to work with.
 
-**Add topics**
+To start configuring your board, click on the `Configuration` button at the top right side of the board. the
+Configuration section is divided into three sections.
 
-This allows us to add topics of any category to the Kanban board.
 
-**Columns**
+#### Configuration
 
-This allows us to customize the Kanban display, with the option of showing/hiding statuses, showing only topics,
-environments statuses, etc.
+The first section is `General Settings` where you can rename the board or share it with any user registered in your
+Clarive solution. This user will not be able to access the board configuration but he/she can interact with the board
+(view topics, change topic status and deploy to a job).
 
-**Views**
+From `Filters` section, you can define filters of the topics you want to show on your board.
 
-This allows us to display different viewing modes for that Kanban.
+These Filters works differently for each kanban type.
 
-- FootPrint: Displays topic history with status changes and the time it has been in topic in each state. This time can
-appears in three different colors, green, yellow or red. These colors are always the same, however they appear when the
-topic are too much time in the same state. To configure when to show a topic in yellow or red, it is necessary to access
-the [Categories administration](/admin/categories) and configure the SLA tab.
+In **dynamic** kanban, filters will be used to show matched topics on the board, in **static** kanban, how ever, filters
+will be used to show topics in `Plan Mode` section where you can select topics to add to your board.
 
-**Save**
+For example, if you have a dynamic board and you want to show all topics related to project `Clarive` you need to set
+filters to project `Clarive`
 
-This allows us to save the Kanban with our customizations. We can save this, either creating a new Kanban, or
-overwriting the current one.
+On the other hand, if you have a static board, and you set filters to category `Bugs` and status `New`, nothing will
+appear on your board, but if you click on the `Plan Mode` button at the top left corner of your static board, all topics
+from `Bugs` category and with status `New` will appear so you can choose which topic to show on your board.
 
-**Maximize/Minimize**
+Finally, in `List` section you have to configure the columns that you want to show on the board, this is the most
+important step to start viewing cards on the board, without settings your columns and their mapped statuses you'll not
+be able to see anything. By default all new created kanban boards will start with three default columns *To do*, *Doing*
+and *Done*, before click save, make sure to map their statuses to match your work-flow process.
 
-This allows to maximize/minimize the Kanban to fit the screen in order to optimize display.
+Other options you can set for each list are:
 
-**Reset configuration**
+- Name: List name
+- WIP: Work In process Limit
+- Statuses Map: Topics with matched statuses to the `Map Statuses` field will appear under this list.
 
-This allows to return to the initial display before applying any changes.
+You can also drag each list to change it's view order, or even delete the list completely by clicking on the delete icon
+at the top right corner of the list.
 
-**Fullscreen**
+!!! info
+    You can select more than one status for each list, and when you move some topic to that list from another list,
+a pop-up window will ask you to which status you want this topic to be moved to, this only happens if your workflow
+allows moving that topic to more than one status in the same list, otherwise the only matched status will be applied
+automatically.
 
-This allows us to view the Kanban in fullscreen.
+For our standard three-column kanban the configuration would look like this:
 
-**Close Kanban**
+<img src="/static/images/docs/kanban/list_config.png" class="img_help" />
 
-This allows us to close Kanban.
 
-### Promote / Demote to Environments
+When you finish configuring the board, click `Save` button.
 
-Topics that are associated with environments have the environment name(s) at the top.
+!!! note
+    Once saved, you can access your kanban later by going to `Boards`     section from Clarive main menu on the left.
 
-If a Topic gets dragged into a promotable Environment, a new job window will pop up.  Schedule the Job accordingly. When
-the Job runs, the pipeline will take care of deploying the changeset contents and promoting the Topics into (or demoting
-them out of) the destination Environment and corresponding Status.  once successfully completed, the topic will appear
-under the new status.
+### Quick Filters
 
-### Promote / Demote to Environments
+Quick filters `Filter` button on the main board view is a way to filter existing topics on the board, it can be used by
+all board members to limit the topics they can see on the board, these filters do not apply to the main filter which has
+been defined by the kanban owner from the Configuration section, these filters are only for easier visualization
+purposes.
 
-Topics that are associated with environments have the environment name(s) at the top.
+### Swimlanes
 
-If a Topic gets dragged into a promotable Environment, a new job window will pop up.  Schedule the Job accordingly. When
-the Job runs, the pipeline will take care of deploying the changeset contents and promoting the Topics into (or demoting
-them out of) the destination Environment and corresponding Status.  once successfully completed, the topic will appear
-under the new status.
+Swimlanes divide the board horizontally and classify topics according to the swimlane chosen by the user.
 
-### Customizing the Kanban Board
+For example, if a user wants to classify topics according to their Urgency, the Kanban will look like this:
 
-Kanban boards can be customized by adding or removing status columns.
+<img src="/static/images/docs/kanban/kanban_swimlane.png" class="img_help" />
 
-These customizations can be saved by clicking the `Save Layout` button, which is only available for Kanban boards
-generated within Topics. Topic grid boards do not have this option.
+### Visualization tools
+
+By default dynamic boards have a limit of 10 cards per list to be shown at once, this can be increased or decreased by
+clicking on the `View` button from the main kanban board and change the value of the `Cards Per List` field, this limit
+does not apply to the static boards, so this option is totally omitted in static boards.
+
+`View` button also allows you to easily collapse all lists and swimlanes with one click.
+
+
+### Working with Topics
+
+Members of the kanban board can view topics cards, change their statuses, deploy jobs as long as their administration
+and work-flow permissions allows it, to move from list to another, hence change topic status, a user just need to drag
+that topic card then, all lists he/she can move to will be indicated by a blue color, hover on that blue list and drop.
+
+You can also view topic data by clicking on it's card.
+
+## Deploying jobs from Kanban board
+
+With Clarive, it is possible to deploy topics from a Kanban board.
+
+To deploy, you don't have to do anything except dragging the topic as of how you want to move it to another list, if
+that topic has deployment process available a new job window will open on the right and you can drop it to one of the
+available deployments.
+
+Once the topic is dropped in the desired deployment type, in the same window, you can configure all the available
+options to perform a deployment: Transition to use, Rule and version, and Calendar slots.
+
+!!! info
+    Adjust the hour with the purple bar and the minutes with the green bar
+
+<img src="/static/images/docs/kanban/kanban_job_menu.png" class="img_help" />
+
+In the `Job item` tab you can see the topics to be deployed
+
+Just click on `Submit` to deploy your job now or at the scheduled time.
+
+!!! tip
+    Go to ![](/static/images/icons/television.svg "Monitor") [Monitor](/getting-started/monitor) to track the progress
+    of your deployment.
+
+
+## Opening a Kanban board from a topic grid
+
+It is possible to open a Kanban Board with the current topics without having to create a dashboard from zero.
+
+For example, from any topic grid we have the Kanban button ![](/static/images/icons/kanban.svg "Kanban") to show the
+topics listed on a board.
+
+From this board it is also possible to perform the operations described above such as moving or deploying a topic.
+
+
+## Opening a Kanban from a Release topic
+
+A Release topic allows you to group multiple topics. You can view release topics in a kanban board immediately by
+clicking on the Kanban board button
+![](/static/images/icons/kanban.svg "Kanban") inside a Release topics. This Kanban Board only shows the topics included
+in
+the Release.
+
+
+!!! note
+    Please note that kanban boards opened from a release topic or from topics grid are a temporary boards, meaning they
+will not be saved permanently in the data base, to save them you have to click on the `Configure` button and then click
+`Save`.

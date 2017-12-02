@@ -1,0 +1,8 @@
+---
+title: 7.0.5
+index: 3000
+---
+
+## Clarive 7.0.5 Release Notes
+
+Clarive SE 7.0.5 is an internal release

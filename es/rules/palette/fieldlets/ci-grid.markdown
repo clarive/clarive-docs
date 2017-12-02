@@ -107,7 +107,3 @@ Indica la lógica del filtro.
 Por defecto, el tipo es OR.
 
 Para más información, hay un *how-to* llamado [Filtros en fieldlets](/how-to/filter-fieldlet).
-
-### Height
-
-Establece la altura del fieldlet dentro del formulario en la vista de Edición.

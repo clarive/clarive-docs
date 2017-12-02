@@ -40,6 +40,3 @@ Open your browser and navigate to `http://localhost:8080`
     docker-compose up
 
     http://localhost:8080
-
-
-

@@ -85,12 +85,6 @@ sólo queremos la fecha.
 
 *Solo aplica cuando el tipo de fieldlet se ha establecido a Grid*.
 
-### Altura del grid en modo edición
-
-Cuando se escoja el fieldlet de tipo grid, este campo define la altura del fieldlet.
-
-*Solo aplica cuando el tipo de fieldlet se ha establecido a Grid*.
-
 ### Tamaño de la página
 
 Define el número de elementos que aparecerán en la lista de selección de tópico.

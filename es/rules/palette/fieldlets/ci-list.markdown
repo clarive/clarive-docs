@@ -111,7 +111,6 @@ Por defecto, el tipo es OR.
 
 Para más información, hay un *how-to* llamado [Filtros es fieldlets](/how-to/filter-fieldlet).
 
-
 ### Descripción
 
 Selecciona la descripción que será mostrada al mostrar el listado de opciones.
@@ -120,8 +119,3 @@ Selecciona la descripción que será mostrada al mostrar el listado de opciones.
 - **Entorno** - Muestra los entornos separados por comas.
 - **Clase** - Muestra el tipo de objeto que es.
 - **Nemónico** - Muestra el nemónico especificado en la configuración del Recurso.
-
-
-### Altura
-
-Define la altura del grid en modo edición.

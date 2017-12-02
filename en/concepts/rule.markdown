@@ -18,4 +18,4 @@ A Rule can be of various types:
 - ![](/static/images/icons/rule-webservice.svg) Webservice
 - ![](/static/images/icons/workflow.svg) Workflow
 
-More details in [Rule concepts](/rules/rule-concepts) section.
+More details in [Rule concepts](/ee/rules/rule-concepts) section.

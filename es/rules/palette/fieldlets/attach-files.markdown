@@ -50,10 +50,6 @@ Indica las extensiones de los ficheros permitidas.
 
 Ejemplo: jpg,.png,TXT, etc...
 
-### Altura
-
-Establece la altura del cuadro de ajuntar ficheros.
-
 ## Features soportadas
 
 ### Subida múltiple de ficheros

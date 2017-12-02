@@ -1,6 +1,6 @@
 ---
 title: A JavaScript Primer
-index: 2000
+index: 4900
 icon: page
 ---
 
@@ -423,4 +423,4 @@ For more in depth learning of the JavaScript language, actually called **Ecmascr
 we recommend the following reference:
 
 - The Mozilla JavaScript guide: [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide <img class='ext-link' src='/static/images/icons/window-new.svg' />](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
-- JavaScript "The Good Parts" book [http://bdcampbell.net/javascript/book/javascript_the_good_parts.pdf <img class='ext-link' src='/static/images/icons/window-new.svg' />](http://bdcampbell.net/javascript/book/javascript_the_good_parts.pdf)
+- JavaScript "The Good Parts" book [https://7chan.org/pr/src/OReilly_JavaScript_The_Good_Parts_May_2008.pdf <img class='ext-link' src='/static/images/icons/window-new.svg' />](https://7chan.org/pr/src/OReilly_JavaScript_The_Good_Parts_May_2008.pdf)

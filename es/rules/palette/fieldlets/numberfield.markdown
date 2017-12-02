@@ -7,7 +7,7 @@ icon: fieldlet-number
 Permite añadir un campo que se completa con números.
 
 La herramienta permite interactuar entre ellos gracias al fieldlet [Calculated
-numberfield](/rules/palette/fieldlets/calculated-numberfield).
+numberfield](/ee/palette/fieldlets/calculated-numberfield).
 
 La lista de elementos que pueden ser configurados dentro del fieldlet.
 

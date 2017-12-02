@@ -7,7 +7,7 @@ icon: fieldlet-time
 Permite añadir una lista desplegable con las horas y minutos del día en intervalos de 15 minutos.
 
 Si además el usuario quiere añadir una fecha, deberá utilizar el fieldlet de
-[Fecha](/rules/palette/fieldlets/datefield).
+[Fecha](/ee/palette/fieldlets/datefield).
 
 ### Ubicación del fieldlet
 

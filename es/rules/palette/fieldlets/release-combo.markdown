@@ -54,7 +54,8 @@ Excluye los estados seleccionados en el punto anterior y muestra el resto que **
 
 ### Tipo
 
-Este fieldlet unicamente acepta que se añada una única opción en el formulario del tópico.
+- **Único** - Permite seleccionar una opcion de las disponibles.
+- **Múltiple** - Permite seleccionar varias opciones entre las disponibles.
 
 ### Campo mostrado
 

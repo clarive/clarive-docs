@@ -38,7 +38,3 @@ Indica si el campo se quiere ocultar en modo edición.
 ### Campo obligatorio
 
 Indica si el campo tiene que ser completado obligatoriamente.
-
-### Alto
-
-Indica la altura de la tabla.

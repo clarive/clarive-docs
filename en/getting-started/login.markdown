@@ -4,7 +4,7 @@ index: 4000
 icon: user
 ---
 
-Before you can log in to Clarive, your [Clarive Administrator](/admin/user) must add you as a User of Clarive. Your
+Before you can log in to Clarive, your [Clarive Administrator](/ee/admin/user) must add you as a User of Clarive. Your
 Clarive Administrator will then notify you of your login information, which consists of:
 
 - **Username** - The user created within the tool, by means of which you may log in to Clarive. The username is not
@@ -15,7 +15,7 @@ You can easily change your password by activating the User dropdown at the top r
 *Change password*.
 
 **Note**: Typically, Administrators will disable your password changing privileges when single sign-on or [LDAP/SAML
-authentication](/admin/ldap) is enabled.
+authentication](/ee/admin/ldap) is enabled.
 
 ### External Login
 

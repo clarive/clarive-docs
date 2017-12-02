@@ -22,4 +22,4 @@ Es posible importar una instantánea realizada previamente (incluso en otro sist
 importar todos los componentes o solo alguno de ellos.
 
 También es posible crear instántaneas a través de las reglas utilizando el [servicio *Tomar instantánea del
-sistema*](rules/palette/services/snapshot).
+sistema*](/ee/palette/services/snapshot).

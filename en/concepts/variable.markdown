@@ -21,7 +21,7 @@ info).
 ## Blueprint Variables
 
 Blueprint Variables contain other Variables configured within a Blueprint Rule. In order to make this set accessible
-outside the Blueprint (e.g. to [Project Templates](/how-to/project-template)), we first need to create a new Variable,
+outside the Blueprint (e.g. to [Project Templates](/ee/how-to/project-template)), we first need to create a new Variable,
 and set its `Type` to 'CI', and its `CI Role` and `CI Class` to 'Nature' in the respective combos. We must then create
 a Nature as a container for the selected Blueprint.
 
@@ -35,5 +35,5 @@ value of the variable is also copied.
 Every [Project](/concepts/project) can have a set of variables with values set specifically for that Project. Moreover,
 for every [Environment](/concepts/environment), different values can be set.
 
-Variables may be configured in an [Project Template](/how-to/project-template) according to the Environment(s) in which
+Variables may be configured in an [Project Template](/ee/how-to/project-template) according to the Environment(s) in which
 they are available or are assigned a given value.

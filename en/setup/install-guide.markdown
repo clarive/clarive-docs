@@ -126,12 +126,12 @@ http {
 }
 ```
 
-### MongoBD Configuration
+### MongoDB Configuration
 
 Within the configuration file, it is necessary to specify the mongo database.  To do this, in the environment
 configuration file specify:
 
-```yaml
+``` yaml
 mongo:
     dbname: your_database_name
 ```

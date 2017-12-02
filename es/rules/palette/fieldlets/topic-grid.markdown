@@ -38,7 +38,3 @@ Indica si el campo se quiere ocultar en modo lectura.
 ### Campo obligatorio
 
 Indica si el campo tiene que ser completado obligatoriamente.
-
-### Altura del grid
-
-Cuando se escoja el fieldlet de tipo grid, este campo define la altura del fieldlet en el modo edición.

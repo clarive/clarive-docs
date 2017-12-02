@@ -1,6 +1,6 @@
 ---
 title: The Clarive JavaScript DSL
-index: 5000
+index: 200
 icon: page
 ---
 

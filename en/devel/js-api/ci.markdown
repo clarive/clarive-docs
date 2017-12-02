@@ -49,6 +49,7 @@ storage and methods.
 ```javascript
 var ci = require("cla/ci");
 ci.createClass("MyClass",{
+    has_bl: 0,
     has:{
         ipAddress: { is:"rw", isa:"Str", required: true }
     },

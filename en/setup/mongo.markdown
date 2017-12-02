@@ -364,7 +364,7 @@ operating-system-specific default CA file. To disable verification, you can use 
 
 You are strongly encouraged to use your own CA file for increased security.
 
-Server hostnames are also validated against the CN name in the server certificate using SSL_verifycn_scheme => 'http'.
+Server hostnames are also validated against the CN name on the server certificate using SSL_verifycn_scheme => 'http'.
 You can use the scheme 'none' to disable this check.
 
 Disabling certificate or hostname verification is a security risk and is not recommended.

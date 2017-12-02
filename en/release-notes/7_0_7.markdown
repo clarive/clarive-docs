@@ -1,0 +1,27 @@
+---
+title: 7.0.7
+index: 3000
+---
+
+## Clarive 7.0.7 Release Notes
+
+
+**Release date**: 21 November 2017
+
+This release include two fixes found in cloud instances
+
+### Bugfix resolved
+
+- [FIX] - Make sure pipelines are not empty loaded
+- [FIX] - Ensure development project tests works properly
+
+### Ready to upgrade?
+
+Just follow the standard procedure for installing the new version. Click [here](https://www.clarive.com/install) to get
+it from our Install page.
+
+### Acknowledgements
+
+Join us in our [Community](https://community.clarive.com/) to make suggestions and report bugs.
+
+Thanks to everyone who participated there.

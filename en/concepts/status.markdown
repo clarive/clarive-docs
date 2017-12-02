@@ -8,7 +8,7 @@ A *Status* is a [Resource](/concepts/resource) that represents the state of an i
 [workflow](/concepts/workflow). An issue can be in only one Status at a given point in time.
 
 When defining a Status, you can optionally specify properties. Read more about them in the [status
-administration](/admin/status) page.
+administration](/ee/admin/status) page.
 
 ### Transitions
 

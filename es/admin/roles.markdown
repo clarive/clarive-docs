@@ -114,7 +114,9 @@ De esta manera se podrá distinguir a los diferentes administradores.
 - `ci` - Todas las acciones relacionadas con los Recursos. Se pueden dar permisos para administrar o ver. El permiso
   administrar también da permisos para ver los Recursos por lo que no es necesario añadir los dos. Para especificar los
 Recursos, hay que arrastrar la acción. En la ventana nueva, seleccionar los roles y las colecciones que el usuario puede
-ver/administrar. Es posible añadir también filtros negativos. Por ejemplo, en caso de que el usuario pueda ver todos los
+ver/administrar, adicionalmente para aquellos Recursos (Proyecto, Variable, Naturaleza, ProjectTemplate) que tengan variables
+configurables el administrador puede limitar por entorno las variables que un rol puede editar.
+Es posible añadir también filtros negativos. Por ejemplo, en caso de que el usuario pueda ver todos los
 Recursos menos la colección Proyecto, se puede añadir Todos los roles y luego un filtro negativo para dicha colección.
 - `dashboards` - Acciones relacionadas con los dashboards.
     - **Cambiar dashboard en desde el explorador** `action.dashboards.view`. Por defecto, el usuario solo puede ver los
@@ -136,6 +138,8 @@ a través del explorador.
       repositorio desde el panel de ciclo de vida
     - **Acceder al repositorio git para pull/push** `action.git.repository_access`. El usuario podrá realizar pull
       y push al repositorio.
+    - **Crear repositorio git con el primer push** `action.git.repository_create`. El usuario con permisos podrá crear
+      e inicializar un nuevo repositorio, asignándolo al proyecto con el primer push a su URL.
     - **Acceder al repositorio solo para pull** `action.git.repository_read`. El usuario podrá realizar pull del
       repostorio.
     - **Puede actualizar las etiquetas del sistema de repositorios** `action.git.update_tags`. El usuario podrá mover
@@ -207,6 +211,8 @@ desarrollo.
 para determinadas categorías.
     - **Ver actividad del tópico** `action.topics.activity`. El usuario podrá ver la actividad del tópico. Esto incluye
       todos los cambios en los datos de los tópico.
+    - **Cambiar el estado de un tópico a cualquier estado disponible** `action.topics.change_to_any_status`. El usuario
+puede cambiar a cualquier estado todas las categorías o las especificadas.
     - **Añadir/Ver los comentarios en los tópicos** `action.topics.comments`. Permite al usuario ver o añadir
       comentarios.
     - **Crear Tópico** `action.topics.create`. El usuario puede crear tópicos para todas o para categorías específicas.

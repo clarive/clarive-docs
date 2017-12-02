@@ -397,4 +397,4 @@ Nuestro objetivo es simplemente dar al lector unos conceptos básicos para comen
 Para una aprender más profundamente acerca del lenguaje JavaSript, también de **Ecmascript**, recomendamos las siguientes lecturas:
 
 - Guia: The Mozilla JavaScript - [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide <img class='ext-link' src='/static/images/icons/window-new.svg' />](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
-- Libro: JavaScript "The Good Parts" - [http://bdcampbell.net/javascript/book/javascript_the_good_parts.pdf <img class='ext-link' src='/static/images/icons/window-new.svg' />](http://bdcampbell.net/javascript/book/javascript_the_good_parts.pdf)
+- Libro: JavaScript "The Good Parts" - [https://7chan.org/pr/src/OReilly_JavaScript_The_Good_Parts_May_2008.pdf <img class='ext-link' src='/static/images/icons/window-new.svg' />](https://7chan.org/pr/src/OReilly_JavaScript_The_Good_Parts_May_2008.pdf)

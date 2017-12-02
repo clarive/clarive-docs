@@ -14,7 +14,7 @@ There are two types of workflows:
 
 ### Topic Workflows
 
-These are simple workflows that apply to a given [Topic category](/admin/categories).
+These are simple workflows that apply to a given [Topic category](/ee/admin/categories).
 
 ### Rule Workflows
 

@@ -50,15 +50,17 @@ querer un menú desplegable, las opciones.
 
 Ejemplo
 
-    Sub-Tarea,textfield,250;Estado,combo_dbl,,Nuevo,Nuevo#En Progreso#Hecho;Fecha,datefield
+    Sub-Tarea,textfield,250;Estado,combo_dbl,,Nuevo,Nuevo#En Progreso#Hecho;Fecha,datefield;Activo,cbox
 
-Con este ejemplo se crean tres columnas, la primera llamada Sub-Tarea, de tipo texto y limitado a 250 caracteres.
+Con este ejemplo se crean cuatro columnas, la primera llamada Sub-Tarea, de tipo texto y limitado a 250 caracteres.
 
 A continuación se crea otra columna 'Estado', un combo desplegable (tipo combo_dbl) con la opción predeterminada al
 principio y tras la coma y las opciones separadas por almohadilla.
 
-Por último una columna llamada Fecha de tipo fecha:
+La siguiente es una columna llamada Fecha de tipo fecha.
 
-              Sub-Tarea  |  Estado  |    Fecha
-           ----------------------------------------
-            <area-texto> | <combo>  | <campo-fecha>
+Por último creamos una columna de tipo checkbox que te permite elegir entre dos valores, activo e inactivo.
+
+              Sub-Tarea  |  Estado  |    Fecha      |   Activo
+           ------------------------------------------------------
+            <area-texto> | <combo>  | <campo-fecha> | <checkbox>

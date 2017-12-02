@@ -34,7 +34,7 @@ entitled *Profiling* will appear in a new window, showing the above-mentioned va
 Conversely, a new tab has been included in the job detail in which run time is observed for each rule element involved
 in the job. Clarive will display a circular graph showing the time taken by each element.
 
-In addition, a table is displayed at the bottom with the operations run in the job, together with their various times:
+In addition, a table is displayed at the bottom with the ops that ran in the job, together with their various times:
 
 ### Step
 
@@ -42,7 +42,7 @@ Displays the job steps.
 
 ### Operation
 
-This displays the operations that have been performed. It will also be shown in parentheses within them what type of
+This displays the operations (ops) that have been performed. It will also be shown in parentheses within them what type of
 operation is being performed, which then appears in the top graph.
 
 Furthermore, a first *idle* line is displayed, showing how long the job has been waiting.

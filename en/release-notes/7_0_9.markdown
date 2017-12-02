@@ -1,0 +1,99 @@
+---
+title: 7.0.9
+index: 3000
+---
+
+## Clarive 7.0.9 Release Notes
+
+
+**Release date**: 29 November 2017
+
+We're pleased to present our new release Clarive 7.0.9.
+This release contains a variety of fixes and improvements from 7.0.8.
+
+### Highlights
+
+- New settings menu
+- Rulebook shell multiline
+- Modify username and email in preferences
+- Move artifacts menu from Tools to Deploy
+
+#### New settings menu
+
+We are working to improve Clarive UI and makes it more user-friedly to new users. First of all, we improve old Config
+option in Admin menu. Now its called Settings and has a new interface.
+
+<img src="/static/images/docs/release-notes/7.0.9/config_panel.png" style="width: auto; height: auto" />
+
+We think this new design will be useful to user to see options clearly because we divided options into
+sections.
+
+#### Rulebook shell multiline
+
+We know that Rulebooks is one of the best feature in Clarive so we are improving it to make more flexible and realible.
+In this release we add multine in `shell`command, so users now can do thinks like this:
+
+```yaml
+do:
+    - shell: |
+            ls -lart
+            echo hello > hi.txt
+            cat hi.txt
+```
+
+Or simpler:
+
+```yaml
+do:
+    - |
+      ls -lart
+      echo hello > hi.txt
+      cat hi.txt
+```
+
+#### Change username and email in Preferences
+
+From Clarive team we knew the limitation that there was when a user wanted to change the username or email. Until now,
+if a user wanted to change one of those values, only an Admin user could do it.
+
+So now, in this new release we include in user preferences two new fields that allow users to change his username and
+his email.
+
+<img src="/static/images/docs/release-notes/7.0.9/change_name.png" style="width: auto; height: auto" />
+
+#### Move artifacts menu from Tools to Deploy
+
+From Clarive we want make our product easy to use and friendlier without losing the essence of the product. That's why
+we have been studying the consistency of the menus with the aim that the user has a clear idea of where are located each
+of the options in the left menu.
+
+To make this, we have removed Tools option in left panel and added Artifacts in Deploy menu.
+
+<img src="/static/images/docs/release-notes/7.0.9/artifacts.png" style="width: auto; height: auto" />
+
+### Improvements and issues resolved
+
+- [ENH] - Improvements in rulebooks documentation
+- [ENH] - Ext-to-React panel now supports ES6
+- [ENH] - New Dockerfile for supporting both adduser and useradd containers
+- [ENH] - Custom antd components
+- [ENH] - Rename clone URL button
+- [ENH] - Admin user has group permissions on initial load
+- [FIX] - Force Clarive migrations in default config file
+- [FIX] - Admin user email is saved in cla setup
+- [FIX] - Jail dump file op in rulebooks
+- [FIX] - Wider revision column in revision fields
+- [FIX] - "Ship a file remotely" op show confirm window before overwrite existing file
+- [FIX] - Update number of rows in topic grid when topics are deleted
+- [FIX] - Fix position of Gauge dashlet
+
+### Ready to upgrade?
+
+Just follow the standard procedure for installing the new version. Click [here](https://www.clarive.com/install) to get
+it from our Install page.
+
+### Acknowledgements
+
+Join us in our [Community](https://community.clarive.com/) to make suggestions and report bugs.
+
+Thanks to everyone who participated there.

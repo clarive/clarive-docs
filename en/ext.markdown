@@ -1,4 +1,4 @@
 ---
-title: Extending
+title: Add-ons
 index: 5000
 ---

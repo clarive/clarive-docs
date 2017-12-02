@@ -1,0 +1,135 @@
+---
+title: 7.0
+index: 3000
+---
+
+## Clarive 7.0 Release Notes
+
+
+**Release date**: 1 Octubre 2017
+
+We're pleased to present our new release Clarive 7.0 and our version Clarive Standard Edition.
+
+This release contains serveral new amazing features. Some of them are list here
+
+### Private Repositories
+
+Repositories in the Clarive cloud are private by default,
+but can be shared with other teams or be global.
+
+<img src="/static/images/docs/release-notes/7.0/private-repositories.png" style="width: auto; height: auto" />
+
+### Fast Git Server
+
+Clarive is a HTTP(s) based Git repository manager with project and role level authentication and branch management.
+<img src="/static/images/docs/release-notes/7.0/fast-git-server.png" style="width: auto; height: auto" />
+
+### Continuous Integration
+
+Push to a branch and Clarive will kick-off your CI build and test pipelines.
+You can use global pipelines and predefined natures so that you don’t have to write
+a pipeline for every new project.
+
+<img src="/static/images/docs/release-notes/7.0/continuous-integration.png" style="width: auto; height: auto" />
+
+### Auto-merging
+
+Clarive merges topic branches in and out of releases, keeping history clean and tidy.
+
+<img src="/static/images/docs/release-notes/7.0/automerging.png" style="width: auto; height: auto" />
+
+### Rulebooks
+
+Add a `.clarive.yml` file to your repository and define your DevOps automation pipelines using rule-based event triggers.
+
+<img src="/static/images/docs/release-notes/7.0/rulebooks.png" style="width: auto; height: auto" />
+
+### Write DevOps code in your language
+
+Turn your Python, Node, Ruby, Go (or any language really) into reusable rules for your rulebooks.
+
+<img src="/static/images/docs/release-notes/7.0/rulebook-languages.png" style="width: auto; height: auto" />
+
+### Orchestration Webhooks
+
+Expose your automation rules to other services across the networks creating devops microsservices
+that can be reused and are tied with the flow of your delivery.
+
+<img src="/static/images/docs/release-notes/7.0/rulebook-webhooks.png" style="width: auto; height: auto" />
+
+### Code Review
+
+Add comments to code and interact with your peers.
+
+<img src="/static/images/docs/release-notes/7.0/code-review.png" style="width: auto; height: auto" />
+
+### Projects can have more than one repository
+
+Projects are projects, repositories are repositories.
+A project may have more than one repo. It’s that simple.
+
+<img src="/static/images/docs/release-notes/7.0/project-multi-repo.png" style="width: auto; height: auto" />
+
+### CI/CD Engine
+Run pipelines on a schedule, monitored and on push to repository. Clarive will monitor execution and let you ajust
+
+<img src="/static/images/docs/release-notes/7.0/monitor.png" style="width: auto; height: auto" />
+
+### Event Rules
+Kick off your event hooks when topics are created, fields are modified or workflow status changes.
+
+<img src="/static/images/docs/release-notes/7.0/rule-based.png" style="width: auto; height: auto" />
+
+### Every Issue is now a Topic
+
+Topics make it simpler to manage your project: branches are 1:1 with their corresponding topic (Feature,
+User Story, Bugfix, etc.) making them true topic branches.
+
+<img src="/static/images/docs/release-notes/7.0/feature-topic.png" style="width: auto; height: auto" />
+
+### Kanban boards
+
+Clarive’s powerful kanban boards help you quickly visualize your topics in any arrangement. Boards
+can be personalized or used by the team.
+
+<img src="/static/images/docs/release-notes/7.0/kanban.png" style="width: auto; height: auto" />
+
+### Multi-Project Releases
+Releases can group changes from more than one project at the same time. This makes it easier to manage complex
+releases with many teams working at once.
+
+<img src="/static/images/docs/release-notes/7.0/release-branches.png" style="width: auto; height: auto" />
+
+### Built-in Workflow Engine
+
+Topics have statuses like In Progress, Ready, Frozen, etc. You can customize workflows for better
+control when and where to move your topics from and to and who can do it (EE only)
+
+<img src="/static/images/docs/release-notes/7.0/topic-workflow.png" style="width: auto; height: auto" />
+
+### Docker under the hood
+All CI/CD runs in a Docker service in the Clarive server or as part of your swarm.
+
+<img src="/static/images/docs/release-notes/7.0/clarive-docker.png" style="width: auto; height: auto" />
+
+### Custom Fields
+Kanban topics can be grouped into any lists, so that you can bisect your project in many ways.
+
+<img src="/static/images/docs/release-notes/7.0/form-fields.png" style="width: auto; height: auto" />
+
+### AND...
+
+**You can read all new features 7.0 Clarive release in out [website](https://clarive.com/features/)**
+
+
+### Ready to upgrade?
+
+Just follow the standard procedure for installing the new version. Click [here](https://www.clarive.com/install) to get
+it from our Install page.
+
+
+### Acknowledgements
+
+Join us in our [Community](https://community.clarive.com/) to make suggestions and report bugs.
+
+Thanks to everyone who participated there.

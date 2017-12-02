@@ -10,8 +10,9 @@ An application programming interface key (API key) is a code passed in by extern
 API keys are an alternative to using login credentials. They simply identify the user without having to send the
 password.
 
-API keys are sensitive information. Store them with care. If stolen, an API key can give access to the data your Clarive
-user is entitled to view.
+!!! warning
+    API keys are sensitive information. Store them with care. If stolen, an API key can give access to the data your Clarive
+    user is entitled to view.
 
 ### Usage
 
@@ -30,7 +31,6 @@ option `api_key_authentication` is set to a true value.
 
 ### Error messages
 
-**api-key authentication is not enabled for this url**
-
-This error message indicates that the URL accessed is not allowed for API keys. Either write a [webservice
-rule](/concepts/webservice) or enable global API key access.
+!!! error "api-key authentication is not enabled for this url"
+    This error message indicates that the URL accessed is not allowed for API keys. Either write a [webservice
+    rule](/concepts/webservice) or enable global API key access.

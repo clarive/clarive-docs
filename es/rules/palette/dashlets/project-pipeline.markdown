@@ -7,18 +7,6 @@ icon: dashlet-project-pipeline
 La cadena de proyecto muestra como las releases, los cambios y las revisiones están distribuidos en los diferentes
 entornos.
 
-### Altura en canvas
-
-Define la altura en numero de filas que se le da al dashlet.
-
-El valor de la altura oscilará entre 1 y 4. Donde con 4 ocupará el 100% de la página.
-
-### Anchura en canvas
-
-Establece el ancho que ocupará el elemento en el dashboard.
-
-El valor máximo permitido es de 12 (100% de anchura).
-
 ### Frecuencia de autorefresco
 
 Establece el intervalo de tiempo el cual el elemento se autorrefrescará.
@@ -37,9 +25,13 @@ Selecciona los entornos a mostrar o ocultar.
 
 Selecciona las categorías que se desean mostrar. Estas categorías sólo pueden ser de tipo cambio.
 
+#### Excluir las categorías seleccionadas
+
+Excluye las categorías seleccionadas en el punto anterior.
+
 #### Campo Revisión
 
-Especifíca el nombre del campo revisión.
+Especifíca el ID del campo revisión que pertenece a las categorías seleccionadas (este ID debe ser el mismo en todas ellas). Este dato es necesario para visualizar la información en el modo Revisiones.
 
 #### Condición avanzada JSON/MongoDB
 

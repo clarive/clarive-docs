@@ -9,4 +9,4 @@ integrity of the rule.
 
 Test sets produce not only the output but also the resulting stash for easy debugging.
 
-To see this option just click on `Run` in a [rule](/rules/rule-concepts).
+To see this option just click on `Run` in a [rule](/ee/rules/rule-concepts).

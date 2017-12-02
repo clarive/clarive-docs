@@ -1,6 +1,6 @@
 ---
 title: REPL
-index: 150
+index: 450
 icon: page
 ---
 
@@ -90,7 +90,7 @@ Enter some code in the main editor panel and hit `Ctrl-Enter` or `Cmd-Enter` (on
 
 ### Cancelling an execution
 
-To cancel an execution does not actually kill the process in the server, just that it returns control to the user.
+To cancel an execution does not actually kill the process on the server, just that it returns control to the user.
 
 That means a server could be overloaded by requests if too many long-running REPL processes are executed.
 
@@ -124,7 +124,7 @@ Will save the current REPL into the user saved REPL list.
 
 #### Export all to file
 
-Exports all saved REPL to files in the file system.
+Exports all saved REPL to files on the file system.
 
 #### Delete
 

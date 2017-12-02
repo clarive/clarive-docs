@@ -14,7 +14,7 @@ The *Transition* combo will display the Transition selected.
 Select from the *Pipeline* combo the Pipeline Rule you wish to use to deploy the Topic.
 
 The *Version* combo offers the option of the latest version of the Pipeline Rule, in addition to one or more tagged
-versions of it where previous versions have been tagged (see [Rule Menu](/rules/rule-menu)). Each tagged version shows
+versions of it where previous versions have been tagged (see [Rule Designer](/ee/admin/rule-designer)). Each tagged version shows
 the names entered in the tag, followed by the User name in brackets. This offers the possibility of reverting back to an
 earlier version of the Pipeline Rule in the event of an error occurring in the latest version.
 
@@ -22,7 +22,7 @@ The *Dynamic tags (version is calculated during execution)* checkbox appears on 
 rule. When checked (which it is by default), it detects the version of the rule last tagged with a particular name.
 Otherwise, it retains the version that was tagged at the time of selection in the *Version* combo.
 
-*When* allows selection of Date and Time for deployment, which references the [Job Calendar](/guide/calendaring) to find
+*When* allows selection of Date and Time for deployment, which references the [Job Calendar](/ee/guide/calendaring) to find
 an available slot.
 
 The Calendar may be overriden by checking *Create a job outside of the available time slots*. This makes adding

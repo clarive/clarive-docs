@@ -48,6 +48,7 @@ Es posible crear sus propias clases de CI con sus correspondiente almacenamiento
 ```javascript
 var ci = require("cla/ci");
 ci.create("MyClass",{
+    has_bl: 0,
     has:{
         ipAddress: { is:"rw", isa:"Str", required: true }
     },

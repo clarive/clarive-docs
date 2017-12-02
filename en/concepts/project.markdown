@@ -24,7 +24,7 @@ Releases, on the other hand, may be multi-project or have no Projects.
 Every Project can have a set of variables with values set specifically for that Project. Moreover, for every
 [Environment](/concepts/environment), different values can be set.
 
-Variables may be configured in an [Project Template](/how-to/project-template)according to the Environment(s) in
+Variables may be configured in an [Project Template](/ee/how-to/project-template)according to the Environment(s) in
 which they are available or are assigned a given value. These variables are referenced in Projects in a similar way to
 when referencing simple variables, with the difference that their values are then imported by selecting from the *Import
 Configuration* combo the Environment Template in which these were configured.
