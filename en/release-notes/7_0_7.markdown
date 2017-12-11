@@ -1,6 +1,6 @@
 ---
 title: 7.0.7
-index: 3000
+index: 100
 ---
 
 ## Clarive 7.0.7 Release Notes

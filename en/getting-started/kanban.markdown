@@ -109,6 +109,62 @@ For example, if a user wants to classify topics according to their Urgency, the 
 
 <img src="/static/images/docs/kanban/kanban_swimlane.png" class="img_help" />
 
+#### Configure swimlanes
+
+By default newly created kanban boards start with two swimlanes, `Creator` and `Categories`, but you're not limited
+to that, you can add new swimlanes by going to `Configure` then click on the `Swimlanes` tab
+
+You can start by selecting which field you want to use as your swimlane data source, current supported field types
+are:
+
+- Users
+- Related Topics
+- Releases
+- Pills
+- Combo
+- Number
+
+After selecting the required field, click on the plus icon to add a new swimlane to your board
+
+<img src="/static/images/docs/kanban/new-swimlane.png" class="img_help" />
+
+| # | Description                          |
+|---|--------------------------------------|
+| 1 | Select field                         |
+| 2 | Add selected field as a new swimlane |
+
+All custom swimlanes will be listed as shown in the following picture.
+
+<img src="/static/images/docs/kanban/swimlanes-screen.png" class="img_help" />
+
+| # | Description                                                          |
+|---|----------------------------------------------------------------------|
+| 1 | Change swimlanes order by dragging here                              |
+| 2 | Edit swimlane name as you want to see in the swimlane drop down menu |
+| 3 | Check to set as the default view for your kanban board               |
+| 4 | Click to edit swimlane                                               |
+| 5 | Click to delete swimlane                                             |
+
+When you click on the `edit` icon, a new window will open on the right with your swimlane details and options,
+below you will find a descriptive image of the different options you can edit to customize the swimlane.
+
+<img src="/static/images/docs/kanban/swimlane-edit.png" class="img_help" />
+
+| #  | Description                                                                                     |
+|----|-------------------------------------------------------------------------------------------------|
+| 1  | Swimlane name edit                                                                              |
+| 2  | Indicator for original field name                                                               |
+| 3  | Check/uncheck if you want to view or hide uncategorized topics                                  |
+| 4  | Uncategorized topics swimlane name                                                              |
+| 5  | Uncategorized topics swimlane position                                                          |
+| 6  | Either view all possible values for this swimlane field or customize the values you want to see |
+| 7  | Drag to change swimlanes position on the board                                                  |
+| 8  | Delete custom value                                                                             |
+| 9  | Edit value name as you want it to appear on your board                                          |
+| 10 | Indicator for the original `value` / `user` / `topic id`                                        |
+| 11 | Select new field value                                                                          |
+| 12 | Add selected value                                                                              |
+
 ### Visualization tools
 
 By default dynamic boards have a limit of 10 cards per list to be shown at once, this can be increased or decreased by

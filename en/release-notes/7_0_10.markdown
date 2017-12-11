@@ -1,0 +1,116 @@
+---
+title: 7.0.10
+index: 200
+---
+
+## Clarive 7.0.10 Release Notes
+
+
+**Release date**: 5 December 2017
+
+We're pleased to present our new release Clarive 7.0.10.
+This release contains a variety of minor fixes and improvements from 7.0.9. Also we include two awesome
+new features.
+
+### Highlights
+
+- Kanban custom swimlanes
+- User Interface enhancements
+
+#### Kanban custom swimlanes
+
+Clarive DevOps Kanban is one of the most useful that we ever work with. Even so, we continue working on it to
+provide new features that facilitate its use. In this release we include a substantial improvement to show
+the information, you can create and *customize your own swimlanes*.
+
+<img src="/static/images/docs/release-notes/7.0.10/kanban_swimlane_setup.png" style="width: auto; height: auto" />
+
+!!! note
+    Custom swimlanes can be defined only by the Kanban owner. Contact him if other
+    one is useful in your workday
+
+You can select the fields that you want to use as swimlane and even select the values that can be use as lane in
+the Kanban board.
+
+A new type of swimlane that we introduce in 7.0.10 Clarive release is **parent topic release**.
+
+<img src="/static/images/docs/release-notes/7.0.10/kanban_swimlane.png" style="width: auto; height: auto" />
+
+Thus, you can take a look what features are include in each release only in one Kanban board. Of course, you can
+filter according your preferences in swimlane mode.
+
+<img src="/static/images/docs/release-notes/7.0.10/kanban_swimlane_drop.png" style="width: auto; height: auto" />
+
+In all swimlanes you can move topics from one lane to another if it's allow. This will update topic relation automatically.
+
+!!! tip
+    Kanban view with parent topic swimlane can allow you move topics from one
+    Sprint/Release to another one easily.
+
+
+#### User Interface enhancements
+
+We know how important the user experience is, that's why during this week focus on improve Clarive interface. We've done
+small changes like increase menu paddings, some buttons redesign. But our greatest effor in UI has gone to two screens: Monitor
+and Topic grid
+
+**Monitor** is the screen where you can find together the relations between code, topics and deployments to environments.
+
+With lane menu we simplify the way that you can perform with each job and get the information related too.
+
+<img src="/static/images/docs/release-notes/7.0.10/monitor.png" style="width: auto; height: auto" />
+
+Job statuses are colorful in order to distinguish what is the current status or your deployment. All our job filters are
+still available in the toolbar
+
+!!! info
+    Click on job or go to ![](/static/images/icons/deploy.svg "Deploy") (Deploy) to have a look to job dashboard. See full job log
+    clicking on ![](/static/images/icons/job-full-log.svg "Log") (Log) .
+
+In **Topic Grid** we reduce our toolbar, moving under more options menu (vertical ellipses) grid actions non-related
+with display mode.
+
+<img src="/static/images/docs/release-notes/7.0.10/topic_grid.png" style="width: auto; height: auto" />
+
+As in monitor we want you to be able to related deployments and topics, so we include new column that help you to
+know what is the current status
+
+<img src="/static/images/docs/release-notes/7.0.10/topic_grid_column.png" style="width: auto; height: auto" />
+
+Each ball talks you about something different. **"MR"** is *Merge Request*, **"CI/CD"** means
+*Continuous Integration/Deployment*, and **"NB"** refers to *Nightly Build*
+
+
+### Improvements and issues resolved
+
+- [ENH] - Cleanup and delete expired sessions in purge
+- [ENH] - Get free license website opened in new tab
+- [ENH] - Round user avatar
+- [ENH] - New server log colors
+- [ENH] - Publish internal [plugins](https://github.com/clarive/cla-core)
+- [ENH] - Remove repository revisions in repository deletion.
+- [FIX] - Small profile changes
+- [FIX] - Rulebook sed operation tests
+- [FIX] - Allow all REPL languages unless role action limit it
+
+
+### What else?
+
+We want to share with all of you our documentation source code. You can collaborate, include your own
+documents or documentation improvements according your Clarive expertise. Any pull request is very welcome
+in our [github site](https://github.com/clarive/clarive-docs). You can access directly to edit the
+documentation from [documentation page](https://docs.clarive.com).
+
+<img src="/static/images/docs/release-notes/7.0.10/docs.png" style="width: auto; height: auto" />
+
+
+### Ready to upgrade?
+
+Just follow the standard procedure for installing the new version. Click [here](https://www.clarive.com/install) to get
+it from our Install page.
+
+### Acknowledgements
+
+Join us in our [Community](https://community.clarive.com/) to make suggestions and report bugs.
+
+Thanks to everyone who participated there.

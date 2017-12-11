@@ -1,12 +1,12 @@
 ---
 title: 7.0
-index: 3000
+index: 100
 ---
 
 ## Clarive 7.0 Release Notes
 
 
-**Release date**: 1 Octubre 2017
+**Release date**: 1 October 2017
 
 We're pleased to present our new release Clarive 7.0 and our version Clarive Standard Edition.
 

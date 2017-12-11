@@ -1,6 +1,6 @@
 ---
 title: 7.0.9
-index: 3000
+index: 100
 ---
 
 ## Clarive 7.0.9 Release Notes
@@ -25,13 +25,12 @@ option in Admin menu. Now its called Settings and has a new interface.
 
 <img src="/static/images/docs/release-notes/7.0.9/config_panel.png" style="width: auto; height: auto" />
 
-We think this new design will be useful to user to see options clearly because we divided options into
-sections.
+This new design will allow users to see options clearly because we divided general configuration into sections.
 
 #### Rulebook shell multiline
 
 We know that Rulebooks is one of the best feature in Clarive so we are improving it to make more flexible and realible.
-In this release we add multine in `shell`command, so users now can do thinks like this:
+In this release we add multiline in `shell`command, so users now can do thinks like this:
 
 ```yaml
 do:

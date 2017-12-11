@@ -132,6 +132,8 @@ a través del explorador.
       los scripts del lado del cliente.
     - **REPL** `action.development.repl`. El usuario podrá ejecutar código arbitrario en el entorno de la aplicación.
       Recomendado sólo durante el desarrollo. **PELIGROSO**
+    - **Lenguajes en REPL** `action.development.languages`. Los lenguajes de programación que el usuario podrá ejecutar en
+      REPL se pueden restringir.
     - **Secuencias** `action.development.sequences`. El usuario podrá ver secuencias de bases de datos.
 - `git` - Acciones relacionadas con el repositorio Git.
     - **Usuario puede cerrar ramas** `action.git.close_branch`. El usuario será capaz de ignorar las ramas de

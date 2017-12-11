@@ -135,6 +135,7 @@ roles and then add a negative filter to that collection.
       scripting.
     - **REPL** `action.development.repl`. User will be able to run arbitrary code in application environment.
       Recommended only during development. **DANGEROUS**
+    - **REPL Languages** `action.development.languages`. Available languages user can run in REPL can be restricted.
     - **Sequences** `action.development.sequences`. User will be able to see database sequences.
 - `git` - All actions for accessing the Git Repository.
     - **User can close branches** `action.git.close_branch`. User will be able to omit repository branches from the

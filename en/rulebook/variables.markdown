@@ -122,6 +122,25 @@ do:
    - npm install ${package}
 ```
 
+## Escaping variables so that they are not parsed
+
+In case you want to prevent the string parser from parsing
+a variable in a string:
+
+```yaml
+do:
+   - write_file:
+       file: subdir/foobar.txt
+       body: "this is dollar-pie: $${pie}" # "this is dollar-pie ${pie}"
+
+   # or say you want to use bash variables in a shell:
+
+   - |
+       MYVAR=/tmp
+       ls $${MYVAR}
+
+```
+
 ## Importing variables from a file
 
 You don't have to keep all your vars in a `.clarive.yml` file.

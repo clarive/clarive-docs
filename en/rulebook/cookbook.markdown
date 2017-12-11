@@ -452,5 +452,22 @@ do:
    - echo: "XML is ${xml_parsed.xml.foo.name}"
 ```
 
+#### Replace a string in a file using sed
 
-#### Call a webservice and parse its JSON content
+Just use the `sed` op.
+
+```yaml
+do:
+   - write_file:
+       file: subdir/foobar.txt
+       body: foo=$${pie}       # this is how we scape variables so that the rule won't parse it
+
+   - pie =: pizza
+
+   - sed:
+       path: subdir/
+   - foo = parse:
+       file: subdir/foobar.txt
+
+   - echo: ${foo}              # here is pizza
+```
