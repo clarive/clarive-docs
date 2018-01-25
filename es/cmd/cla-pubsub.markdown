@@ -17,5 +17,5 @@ cla bootstrap
 A continuación podrá iniciar el demonio a la hora de arrancar el servidor web de Clarive:
 
 ```bash
-cla pubsub --env su_entorno --port [puerto pubsub] --daemon
+cla pubsub -c ficher_config --port [puerto pubsub] --daemon
 ```

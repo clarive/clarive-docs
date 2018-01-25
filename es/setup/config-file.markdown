@@ -7,7 +7,7 @@ icon: page
 El fichero de configuración de Clarive es un archivo [YAML](/concepts/yaml) personalizado por el usuario que contiene
 los parámetros específicos de la instalación
 
-## Entornos y --env
+## Entornos y -c
 
 El archivo de configuración también se llama **archivo de entorno de configuración** de Clarive, y designado como
 `[env].yml` en este manual.
@@ -20,8 +20,7 @@ entorno de configuración tal y como está en el archivo de configuración.
 
 Por ejemplo, para iniciar el servidor web de Clarive:
 
-    cla web-start --env [env].yml
-
+    cla web-start -c [config].yml
 
 ## Configuración de las variables
 

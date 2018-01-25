@@ -9,12 +9,14 @@ This are the common, global command-line options.
 Some commands may not use them internally, so it doesn't apply necessarily to every command, but it does get loaded by
 the main Clarive `cla` command manager.
 
-### --env [environment]
+### -c [config_file]
 
-This option sets the *environment* config file to be used, ie.  the option `--env mypersonal` will tell `cla` to load
-the configuration options from any file called `config/mypersonal.yml` in the config search hierarchy.
+This option sets the config file to be used, ie.  the option `-c mypersonal` will tell `cla` to load
+the configuration options from any file called `CLARIVE_BASE/config/mypersonal.yml` in the config search hierarchy.
 
-Do not confuse this with Clarive [environments](/concepts/environment).
+!!! important
+    In previous Clarive versions this was known as the `--env` argument and was called _environments_, but for
+    better standard it has been renamed, although the `--env` argument is supported as well for legacy reasons.
 
 ### --enable-plugins
 
@@ -45,9 +47,9 @@ Setting it here overwrites setting it as an environment variable.
 
 ## Setting options in the [env].yml config file
 
-All the options here can be set also in the `[env].yml` file, except the `--env` option for logical reasons.
+All the options here can be set also in the `[config].yml` file, except the `-c` option for logical reasons.
 
-For example, this could be an `[env].yml` config file.  All options with dash `-` in the name need to be translated to
+For example, this could be an `[config].yml` config file.  All options with dash `-` in the name need to be translated to
 underscore `_`:
 
 ```yaml

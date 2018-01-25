@@ -45,7 +45,7 @@ You must to define four more environment variables.
 export CLARIVE_BASE=/opt/clarive
 export CLARIVE_HOME=$CLARIVE_BASE/clarive
 export LD_LIBRARY_PATH=$CLARIVE_BASE/local/lib
-export CLARIVE_ENV=your_environment
+export CLARIVE_ENV=your_config
 export PATH="$CLARIVE_HOME/bin:$CLARIVE_BASE/local/bin:$CLARIVE_BASE/local/sbin:$PATH"
 ```
 
@@ -178,11 +178,11 @@ mongod -f $CLARIVE_BASE/config/mongod.conf
 Clarive makes a difference between the web part and the dispatcher part and both must started separately:
 
 ```bash
-cla web-start --env your_environment --daemon
-cla disp-start --env your_environment --daemon
+cla web-start -c your_config --daemon
+cla disp-start -c your_config --daemon
 
-cla web-stop --env your_environment
-cla disp-stop --env your_environment
+cla web-stop -c your_config
+cla disp-stop -c your_config
 ```
 
 ### Stop Clarive
@@ -190,11 +190,11 @@ cla disp-stop --env your_environment
 As to start, it is necessary to stop both: the web and the dispatcher
 
 ```bash
-cla web-stop --env your_environment
-cla disp-stop --env your_environment
+cla web-stop -c your_config
+cla disp-stop -c your_config
 
-cla web-stop --env your_environment
-cla disp-stop --env your_environment
+cla web-stop -c your_config
+cla disp-stop -c your_config
 ```
 
 ### Access Clarive via Web

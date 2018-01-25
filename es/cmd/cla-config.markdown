@@ -24,7 +24,7 @@ Tras su ejecución, la herramienta pregunta acerca de la configuración de los p
 
 Tras esto, el fichero de configuración con los parámetros dados se crea y se almacena en el directorio: `$CLARIVE_HOME/config`. Su nomenclatura es:
 
-- `<$env>.yml` - Si una opción se ha pasado como argumento de la forma: `--env <nombre_entorno>`.
+- `<$config_name>.yml` - Si una opción se ha pasado como argumento de la forma: `-c <nombre_config>`.
 - `<$CLARIVE_ENV>.yml.` - Si no se ha pasado ningún argumento.
 
 

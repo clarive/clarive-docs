@@ -24,11 +24,10 @@ After executing, it asks some questions about some configuration parameters, the
 -  `time_zone_offset` - To establish time zone.
 
 After answering all these questions a configuration file is created
-in `$CLARIVE_HOME/config` directory. It is  called:
+in `$CLARIVE_HOME/config` directory. It is called:
 
-- `<$env>.yml` -  If an option has been passed as an argument in the form: `--env <environment_name>` .
+- `<$env>.yml` -  If an option has been passed as an argument in the form: `-c <config_file>` .
 - `<$CLARIVE_ENV>.yml.` - If no env argument is passed.
-
 
 This command has three different subcommands that can be displayed through the help option:
 
@@ -45,13 +44,17 @@ This command has three different subcommands that can be displayed through the h
         cla <command> -h for command options
 
 
-`cla config-show`: this command shows all configuration parameters defined in the following configuration files:
+`cla config-show`: this command shows all configuration parameters defined in
+the following configuration files:
+
 - `clarive.yml`.
 - `global.yml`.
 
-File defined in option `--env` passed as argument in the command call with yml extension, or file `$CLARIVE_ENV` with yml extension.
+File defined in option `-c` passed as argument in the command call with yml
+extension, or file `$CLARIVE_ENV` with yml extension.
 
-With the option `--key <parameter>`, the output shows only the parameters defined in <parameter> field.
+With the option `--key <parameter>`, the output shows only the parameters
+defined in <parameter> field.
 
 `cla config-opts`: this command shows:
 

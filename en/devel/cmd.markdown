@@ -70,7 +70,7 @@ Although command-line options are available, the correct way to access the comma
 includes:
 
 - the global config YAML file
-- the environment configuration YAML file (set with `--env`)
+- the config YAML file (set with `-c`)
 - the command section within the configuration file
 - finally, the command line argument flags
 

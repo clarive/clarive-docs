@@ -52,7 +52,7 @@ export CLARIVE_BASE=/opt/clarive
 
 export CLARIVE_HOME=$CLARIVE_BASE/clarive
 export LD_LIBRARY_PATH=$CLARIVE_BASE/local/lib
-export CLARIVE_ENV=your_environment
+export CLARIVE_ENV=your_config
 export PATH="$CLARIVE_HOME/bin:$CLARIVE_BASE/local/bin:$CLARIVE_BASE/local/sbin:$PATH"
 ```
 Las variables marcadas tienen que modificarse en base al entorno de la instalación
@@ -186,11 +186,11 @@ mongod -f $CLARIVE_BASE/config/mongod.conf
 Clarive hace diferencia entre la parte web y el dispatcher. Ambos tienen que ser arrancados de manera separada:
 
 ```bash
-cla web-start --env your_environment --daemon
-cla disp-start --env your_environment --daemon
+cla web-start -c your_config --daemon
+cla disp-start -c your_config --daemon
 
-cla web-stop --env your_environment
-cla disp-stop --env your_environment
+cla web-stop -c your_config
+cla disp-stop -c your_config
 ```
 
 ### Parar Clarive
@@ -199,11 +199,11 @@ Al igual que en la fase de arranque, para parar Clarive es necesario parar los d
 dispatcher:
 
 ```bash
-cla web-stop --env your_environment
-cla disp-stop --env your_environment
+cla web-stop -c your_config
+cla disp-stop -c your_config
 
-cla web-stop --env your_environment
-cla disp-stop --env your_environment
+cla web-stop -c your_config
+cla disp-stop -c your_config
 ```
 
 ### Acceso a Clarive via Web

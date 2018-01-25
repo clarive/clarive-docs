@@ -4,8 +4,10 @@ index: 5000
 icon: statement-call
 ---
 
-Incluye una regla específica dentro del flujo.
+Selecciona una regla específica para ser ejecutada dentro de la regla donde se esté ejecutando el servicio 'CALL regla'.
 
-Es necesario configurar los siguientes campos:
+Formulario de configuración:
 
-- **id_rule** - En el campo *value* incluir el ID de la regla que se quiere insertar.
+- **Nombre** - El nombre del servicio puede ser editado como desee.
+- **Regla a ser invocada** - Elige la regla que quieres que sea ejecutada por el servicio. Solo las reglas activas se
+listarán en el combo.

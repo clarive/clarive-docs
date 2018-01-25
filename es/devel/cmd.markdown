@@ -63,7 +63,7 @@ Aunque las opciones de línea de comandos están disponibles, la forma correcta 
 es llamando a `process.options(clave)`, que recupera el valor correcto de configuración que incluye:
 
 - El archivo de configuración YAML global.
-- El archivo YAML de configuración del entorno (establecido con `--env`)
+- El archivo YAML de configuración del entorno (establecido con `-c`)
 - La sección del comando en el archivo de configuración
 - Por último, los *flags* de los argumentos de línea de comandos
 

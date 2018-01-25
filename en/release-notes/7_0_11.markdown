@@ -1,0 +1,71 @@
+---
+title: 7.0.11
+index: 201
+---
+
+## Clarive 7.0.11 Release Notes
+
+
+**Release date**: 21 December 2017
+
+We're pleased to present our new release Clarive 7.0.11.
+This release contains a variety of minor fixes and improvements from 7.0.10. Also we include two awesome
+new features.
+
+### Highlights
+
+- Docker Admin Interface
+- Secret Variables
+
+#### Docker Admin Interface
+
+Local commands run in a shell in the Clarive server, always inside a Docker container. In this release,
+we provide a new admin section to be able to manage Docker.
+
+Containers placed in the same server than clarive can be manage. Complete list is shown including the current status of
+each one
+
+<img src="/static/images/docs/release-notes/7.0.11/docker_containers.png" style="width: auto; height: auto" />
+
+Using the new docker list containers you can do over them actions like start, stop and delete.
+
+List of images are available too. Even you can delete Docker images using Clarive DevOps Docker Manager.
+
+<img src="/static/images/docs/release-notes/7.0.11/docker_images.png" style="width: auto; height: auto" />
+
+
+#### Secret Variables
+
+Keep variables private. The content cannot be available anywhere, the clear view is not possible, Clarive allow know
+define variables as **secret**.
+
+<img src="/static/images/docs/release-notes/7.0.11/vars_list.png" style="width: auto; height: auto" />
+
+Varibles have double scope. One of them is going to be available for environment/s and project/s defined in the own variable.
+
+<img src="/static/images/docs/release-notes/7.0.11/vars_secret.png" style="width: auto; height: auto" />
+
+!!! note
+    Users can only manage variables for owned projects.
+
+
+### Improvements and issues resolved
+
+- [ENH] - Continue imrpoving Kanban
+- [ENH] - Update js libraries
+- [ENH] - Variable management for rulebooks
+- [FIX] - Topic grid filter fixes
+- [FIX] - Rulebook sed operation tests
+- [FIX] - Push to git repositories is allow with no project related to repository (Enterprise Edition Only)
+
+
+### Ready to upgrade?
+
+Just follow the standard procedure for installing the new version. Click [here](https://www.clarive.com/install) to get
+it from our Install page.
+
+### Acknowledgements
+
+Join us in our [Community](https://community.clarive.com/) to make suggestions and report bugs.
+
+Thanks to everyone who participated there.

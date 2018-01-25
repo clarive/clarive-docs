@@ -22,7 +22,7 @@ This are the default directories of a Clarive installation:
 - `data/` - database files are kept here by default, normally under `data/mongo`.
 - `logs/` - for server log files and `.pid` and `.lock` process files.
 - `tmp/` - for temporary files and directories used mostly by the web-server.
-- `config/` - directory for user configuration files `[env].yml`. This directory is in the search path for the `--env`
+- `config/` - directory for user configuration files `[env].yml`. This directory is in the search path for the `-c`
   command-line option for the `cla` command. MongoDB and Nginx configuration files are kept here by default.
 - `features/` - here is where user-installed product features are kept.  each subdirectory here is a feature.
 - `plugins/` - here is where user-installed product plugins. Each subdirectory is a plugin.
@@ -53,5 +53,5 @@ directory.
 
 ## Changing the Default Installation Directories
 
-To change the default directories, set new values in your [configuration environment](/setup/config-file) file
-`[env].yml`.
+To change the default directories, set new values in your [configuration file](/setup/config-file) file
+`[config].yml`.

@@ -40,6 +40,6 @@ When migrations are needed, the following message will be shown:
 
 To remedy this situation, start the server or dispatcher with the `--migrate` option added:
 
-    cla web-start --env [myenv] --migrate
+    cla web-start -c [config_file] --migrate
 
 This will trigger a migration run, after which it will start the server/dispatcher normally.

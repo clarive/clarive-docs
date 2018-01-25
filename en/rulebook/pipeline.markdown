@@ -245,3 +245,5 @@ build:
    - mkdir -p {{ dist_dir }}
    - touch {{ dir_dist }}/{{ ctx.job('name') }}
 ```
+
+For a list of all context variables, read the [context data doc article](/rulebook/context#ctxjob).

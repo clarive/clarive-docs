@@ -174,3 +174,17 @@ var:
 As the assignment of a ill-defined hash `{ ... }` to the variable `foo`.
 You have to put quotes around the handlebars, or use a multi-line `|` string so that the
 YAML parser treats as a valid.
+
+## Configuring project, environment or global variables
+
+If you want to keep project or global variables in the database
+rather than in your project files, use the rulebook variable UI
+
+This method is ideal for storing __secret__ keys.
+
+Variables saved to the Clarive database with the Variables UI can
+be accessed through the `ctx.var(varname)` functions.
+
+Clarive will detect the context where the `ctx.var()` function is being
+called from and attempt to find a variable that matches. Otherwise a blank
+string is returned.

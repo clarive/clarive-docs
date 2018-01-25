@@ -17,7 +17,7 @@ cla bootstrap
 You can then start the daemon in the command line when starting the Clarive web server:
 
 ```bash
-cla pubsub --env your_environment --port [Pubsub port] --daemon
+cla pubsub -c your_config --port [Pubsub port] --daemon
 ```
 
 The daemon should now be running for the current Clarive session.

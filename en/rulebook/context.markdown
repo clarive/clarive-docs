@@ -46,6 +46,24 @@ Remember, if you are not in the correct context, they will return `undefined`
 instead of a hash `Object`.  Use `ctx.has()` to check the context, otherwise
 strange side effects may happen.
 
+#### ctx.var(varname)
+
+Return variable values for the current context scope and input varname.
+
+Depending on the scope, the variable value (if available) will change.
+
+```yaml
+deploy:
+   - instance_id =: "{{ ctx.var("aws_instance_id") }}"
+   - image: docker4x/shell-aws
+   - aws ec2 start-instances --instance-ids ${instance_id}
+
+   # or in one go:
+
+   - aws ec2 start-instances --instance-ids {{ ctx.var("instance_id") }}
+
+```
+
 #### ctx.topic()
 
 This is the hash returned by the `ctx.topic()` ClaJS function.
@@ -87,10 +105,12 @@ Key               | Type          | Description
 Here's a description of the hash returned by the `ctx.job()` function:
 
 Key                          | Type          | Description
------------------------------|---------------|------------------------------------------------------
+-----------------------------|---------------|--------------------------------------------------------------------------
 `ctx.job("project")`         | String        | Current project being processed, if any
-`ctx.job("change_version")`  | String        | Version id from the Release topic, etc.
+`ctx.job("repository")`      | String        | Current repository name being processed, if any
+`ctx.job("change_version")`  | String        | Version number from the Release topic, etc.
 `ctx.job("environment")`     | String        | Current deployment environment (DEV, QA, PROD...)
+`ctx.job("env")`             | String        | Same as `environment` above
 `ctx.job("items")`           | Array         | List of job items
 `ctx.job("name")`            | String        | Job name (as shown in the Monitor)
 `ctx.job("type")`            | String        | `static`, `promote` or `demote`
@@ -100,6 +120,7 @@ Key                          | Type          | Description
 `ctx.job("status_from")`     | String        | Current project being processed, if any
 `ctx.job("status_to")`       | String        | Version id from the Release topic, etc.
 `ctx.job("is_rollback")`     | String        | Current deployment environment (DEV, QA,
+`ctx.job("failing")`         | Boolean       | In the `post:` pipeline rule, set to `1` if previous steps failed
 
 #### ctx.request()
 

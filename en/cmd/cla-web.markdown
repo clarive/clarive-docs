@@ -10,7 +10,7 @@ icon: console
 
 The `web` subcommands generally support the following options:
 
-`--env <environment>` Used to configure parameters.
+`-c <config_file>` Used to configure parameters.
 
 `--r` Server restarts if there is any change these locations:
 

@@ -41,6 +41,6 @@ Cuando se necesitan las migraciones, se mostrará el siguiente mensaje:
 
 Para remediar esta situación, inicie el servidor o dispatcher con la opción `--migrate` añadido:
 
-    cla web-start --env [myenv] --migrate
+    cla web-start -c [myenv] --migrate
 
 Esto inicializará la migración, después de lo cual se iniciará el servidor/dispatcher de manera automática.

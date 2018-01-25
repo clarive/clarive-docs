@@ -24,7 +24,7 @@ Estos son los directorios por defecto de una instalación de Clarive:
 - `logs/` - Para los logs del servidor y los ficheros de procesos `.pid` y `.lock`.
 - `tmp/` - Para los archivos y directorios temporales utilizados, sobre todo por el servidor web.
 - `config/` - Directorio para los archivos de configuración de usuario `[env].yml`. Este directorio se encuentra en la
-  ruta de búsqueda para la opción `--env` de la línea de comandos para el comando `cla`. Los archivos de configuración
+  ruta de búsqueda para la opción `-c` de la línea de comandos para el comando `cla`. Los archivos de configuración
 de MongoDB y Nginx se guardan aqui de forma predeterminada.
 - `features/` - Aquí es donde se guardan las extensiones de producto instaladas por el usuario. Cada subdirectorio aquí
   es una extensión.

@@ -7,17 +7,17 @@ icon: page
 The Clarive configuration file is an user-customized [YAML](/concepts/yaml) file that contains installation specific
 parameters.
 
-## Environments and --env
+## Configuration environment and -c
 
-The configuration file is also called **configuration environment file** in Clarive, and designated as `[env].yml` in
-this manual.
+The configuration file is also called **configuration file** or **configuration
+environment** in Clarive, and designated as `[config_file].yml` in this manual.
 
 Everytime we start a Clarive process from the command-line, or install a Windows service, we define a configuration
 environment by referring to a configuration filename.
 
 For example, to start the Clarive Web Server:
 
-    cla web-start --env [env].yml
+    cla web-start -c [config].yml
 
 ## Configuration Variables
 

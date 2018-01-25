@@ -10,7 +10,7 @@ icon: console
 
 El subcomando `web` permite las siguientes opciones
 
-`--env <entorno>` se utiliza para configurar los parámetros.
+`-c <config_file>` se utiliza para configurar los parámetros.
 
 `--r` el servidor se reinicia automáticamente si hay algún cambio en las rutas:
 
